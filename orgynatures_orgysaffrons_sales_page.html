@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090807">
+<title>OrgyNatures | OrgySaffrons</title>
+<style>
+:root{--bg:#090807;--panel:#15110d;--gold:#d9ad55;--gold2:#f4d58d;--cream:#f7f0e4;--muted:#b7aa98;--line:rgba(217,173,85,.22)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.13;background-image:radial-gradient(#d9ad55 .65px,transparent .65px);background-size:25px 25px;mask-image:linear-gradient(to bottom,black,transparent 80%);z-index:-1}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.logo{font-family:Georgia,serif;font-size:23px;letter-spacing:.08em;color:var(--gold2)}.logo small{display:block;font:9px Inter,sans-serif;letter-spacing:.32em;color:var(--muted);margin-top:4px}
+.links{display:flex;gap:28px;color:#d2c5b3;font-size:13px}.links a:hover{color:var(--gold2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:999px;background:linear-gradient(135deg,#f0d18b,#b47c2e);color:#171008;font-weight:750;font-size:13px;box-shadow:0 8px 30px #d9ad5524;transition:.3s;border:0;cursor:pointer}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 34px #d9ad5540}
+.hero{min-height:690px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:50px;padding:76px 0 90px}
+.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.3em;text-transform:uppercase;font-weight:700}
+h1{font:clamp(48px,6vw,78px)/.99 Georgia,serif;letter-spacing:-.04em;margin:22px 0}h1 em{color:var(--gold2);font-weight:400}
+.lead{color:var(--muted);font-size:16px;line-height:1.8;max-width:510px}.hero-actions{display:flex;gap:14px;align-items:center;margin-top:32px;flex-wrap:wrap}.ghost{border:1px solid var(--line);border-radius:999px;padding:13px 20px;font-size:13px;color:var(--cream);transition:.3s}.ghost:hover{border-color:var(--gold);color:var(--gold2)}
+.hero-art{position:relative;min-height:480px;display:grid;place-items:center}.halo{position:absolute;width:min(440px,90%);aspect-ratio:1;border:1px solid #d9ad5540;border-radius:50%;box-shadow:0 0 90px #d9ad5510,inset 0 0 70px #d9ad550b;animation:rotate 32s linear infinite}.halo:before,.halo:after{content:"";position:absolute;border:1px solid #d9ad552b;border-radius:50%;inset:24px}.halo:after{inset:52px}
+.saffron-visual{position:relative;width:min(380px,88%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 40% 34%,#5a2815 0,#25130d 48%,#100b08 75%);border:1px solid #d9ad5566;box-shadow:0 35px 100px #000,0 0 60px #d98c2820;display:grid;place-items:center;overflow:hidden;animation:float 6s ease-in-out infinite}
+.saffron-visual:before{content:"";position:absolute;inset:18px;border:1px solid #d9ad5544;border-radius:50%}
+.stigma{position:absolute;width:5px;height:130px;border-radius:100%;background:linear-gradient(#ffcf5a,#a92316 60%,#58100d);transform-origin:bottom;filter:drop-shadow(0 0 5px #e65a1c);animation:sway 4s ease-in-out infinite}
+.stigma:nth-child(1){transform:rotate(-55deg) translateY(-10px)}.stigma:nth-child(2){transform:rotate(-34deg) translateY(-18px);height:150px}.stigma:nth-child(3){transform:rotate(-13deg) translateY(-12px);height:118px}.stigma:nth-child(4){transform:rotate(12deg) translateY(-15px);height:145px}.stigma:nth-child(5){transform:rotate(34deg) translateY(-8px);height:125px}.stigma:nth-child(6){transform:rotate(55deg) translateY(-15px);height:140px}
+.center-mark{position:relative;z-index:2;text-align:center;font:18px Georgia,serif;letter-spacing:.22em;color:#f3d18b;text-shadow:0 2px 15px #000}
+.float-note{position:absolute;background:#17110bdb;border:1px solid var(--line);backdrop-filter:blur(12px);padding:13px 17px;border-radius:12px;color:var(--gold2);font:13px Georgia,serif;box-shadow:0 12px 40px #0008}.note-one{top:14%;right:0}.note-two{bottom:13%;left:0}
+section{padding:90px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 42px}.section-head h2{font:clamp(34px,4vw,49px) Georgia,serif;margin:14px 0}.section-head p{color:var(--muted);line-height:1.7}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{position:relative;background:linear-gradient(145deg,#1b1510,#100d0a);border:1px solid var(--line);border-radius:20px;padding:28px;overflow:hidden;transition:.35s}.card:hover{transform:translateY(-8px);border-color:#d9ad5580;box-shadow:0 20px 55px #0008}.card:before{content:"";position:absolute;width:170px;height:170px;border-radius:50%;background:#d9ad550c;right:-70px;top:-80px}.weight{font:42px Georgia,serif;color:var(--gold2)}.card h3{font:22px Georgia,serif;margin:8px 0}.card p{color:var(--muted);font-size:13px;line-height:1.7;min-height:42px}.price{font:32px Georgia,serif;margin:22px 0}.price small{font:12px Inter,sans-serif;color:var(--muted)}.card .btn{width:100%}.featured{border-color:#d9ad5580;background:linear-gradient(145deg,#251a0e,#110d09)}.tag{position:absolute;top:18px;right:18px;font-size:9px;letter-spacing:.12em;color:#1a1007;background:var(--gold2);padding:7px 9px;border-radius:30px;font-weight:800}
+.bulk{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center;background:linear-gradient(120deg,#1b140d,#100d0a);border:1px solid var(--line);border-radius:26px;padding:clamp(28px,5vw,55px)}.bulk h2{font:clamp(34px,4vw,48px) Georgia,serif;margin:14px 0}.bulk p{color:var(--muted);line-height:1.8}.bulk-box{border:1px solid var(--line);border-radius:18px;padding:25px;text-align:center;background:#09080780}.bulk-box strong{display:block;font:25px Georgia,serif;color:var(--gold2);margin-bottom:8px}.bulk-box span{font-size:13px;color:var(--muted);line-height:1.7}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{padding:24px;border-top:1px solid var(--line)}.feature b{font:20px Georgia,serif;color:var(--gold2)}.feature p{color:var(--muted);font-size:13px;line-height:1.7}
+footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.foot b{color:var(--gold2);font:18px Georgia,serif}
+.reveal{opacity:0;transform:translateY(25px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-13px)}}@keyframes rotate{to{transform:rotate(360deg)}}@keyframes sway{0%,100%{margin-top:0}50%{margin-top:8px}}
+@media(max-width:800px){.links{display:none}.hero{grid-template-columns:1fr;padding:60px 0 35px;gap:10px}.hero-art{min-height:400px}.products,.features{grid-template-columns:1fr}.bulk{grid-template-columns:1fr}.note-one{right:-5px}.note-two{left:-5px}section{padding:65px 0}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="wrap">
+<nav>
+  <a class="logo" href="#">ORGYNATURES<small>THE ART OF PURE NATURE</small></a>
+  <div class="links"><a href="#story">Our story</a><a href="#products">Shop saffron</a><a href="#bulk">Bulk orders</a></div>
+  <a class="btn" href="#products">Explore products</a>
+</nav>
+</header>
+<main>
+<div class="wrap hero" id="story">
+  <div class="reveal">
+    <div class="eyebrow">From nature • With care</div>
+    <h1>A little luxury.<br><em>Pure saffron.</em></h1>
+    <p class="lead">Discover OrgySaffrons by OrgyNatures — saffron presented with care, crafted for the moments that deserve something special.</p>
+    <div class="hero-actions"><a class="btn" href="#products">Shop OrgySaffrons</a><a class="ghost" href="#bulk">Enquire about bulk orders</a></div>
+  </div>
+  <div class="hero-art reveal">
+    <div class="halo"></div>
+    <div class="saffron-visual">
+      <i class="stigma"></i><i class="stigma"></i><i class="stigma"></i><i class="stigma"></i><i class="stigma"></i><i class="stigma"></i>
+      <div class="center-mark">ORGY<br>SAFFRONS</div>
+    </div>
+    <div class="float-note note-one">A precious touch of nature</div><div class="float-note note-two">ORGYNATURES · EST. WITH CARE</div>
+  </div>
+</div>
+<section id="products">
+ <div class="wrap">
+  <div class="section-head reveal"><div class="eyebrow">Choose your pack</div><h2>Bring home the golden threads</h2><p>Choose the pack that suits you. Every pack is priced transparently at ₹700 per gram.</p></div>
+  <div class="products">
+   <article class="card reveal"><div class="weight">01<span style="font-size:18px">g</span></div><h3>Essential Pack</h3><p>A lovely way to discover OrgySaffrons.</p><div class="price">₹700 <small>/ pack</small></div><a class="btn order" data-pack="1g — ₹700" href="https://wa.me/919072945144?text=Hello%20OrgyNatures%2C%20I%27d%20like%20to%20order%20the%201g%20OrgySaffrons%20pack%20for%20%E2%82%B9700." target="_blank" rel="noopener">Order 1g</a></article>
+   <article class="card featured reveal"><span class="tag">POPULAR CHOICE</span><div class="weight">05<span style="font-size:18px">g</span></div><h3>Value Pack</h3><p>More saffron for your everyday special moments.</p><div class="price">₹3,500 <small>/ pack</small></div><a class="btn order" data-pack="5g — ₹3,500" href="https://wa.me/919072945144?text=Hello%20OrgyNatures%2C%20I%27d%20like%20to%20order%20the%205g%20OrgySaffrons%20pack%20for%20%E2%82%B93%2C500." target="_blank" rel="noopener">Order 5g</a></article>
+   <article class="card reveal"><div class="weight">10<span style="font-size:18px">g</span></div><h3>Signature Pack</h3><p>A generous pack for families and saffron lovers.</p><div class="price">₹7,000 <small>/ pack</small></div><a class="btn order" data-pack="10g — ₹7,000" href="https://wa.me/919072945144?text=Hello%20OrgyNatures%2C%20I%27d%20like%20to%20order%20the%2010g%20OrgySaffrons%20pack%20for%20%E2%82%B97%2C000." target="_blank" rel="noopener">Order 10g</a></article>
+  </div>
+ </div>
+</section>
+<section id="bulk">
+ <div class="wrap bulk reveal">
+  <div><div class="eyebrow">For larger quantities</div><h2>Buying in bulk?<br><span style="color:var(--gold2)">Let's make it special.</span></h2><p>Planning a larger order for your business, store, gifting, or events? Get in touch with us for special bulk pricing and a custom quote.</p><a class="btn" href="https://wa.me/919072945144?text=Hello%20OrgyNatures%2C%20I%27m%20interested%20in%20bulk%20OrgySaffrons.%20Please%20share%20your%20bulk%20pricing." target="_blank" rel="noopener">Request bulk pricing</a></div>
+  <div class="bulk-box"><strong>Exclusive bulk offers</strong><span>Special discounts are available on bulk orders.<br>Pricing depends on the quantity ordered.</span></div>
+ </div>
+</section>
+<section>
+ <div class="wrap">
+  <div class="section-head reveal"><div class="eyebrow">The OrgyNatures promise</div><h2>Thoughtful in every detail</h2></div>
+  <div class="features">
+   <div class="feature reveal"><b>Care-led cultivation</b><p>Our brand story begins with respect for the crop and the care behind every harvest.</p></div>
+   <div class="feature reveal"><b>Clear, simple pricing</b><p>Easy-to-understand pack sizes, with a straightforward base price of ₹700 per gram.</p></div>
+   <div class="feature reveal"><b>Personal bulk support</b><p>Speak with us about larger quantities and receive a tailored quotation.</p></div>
+  </div>
+ </div>
+</section>
+<section id="contact" style="padding-top:20px">
+ <div class="wrap section-head reveal">
+  <div class="eyebrow">We'd love to hear from you</div><h2>Make your saffron enquiry</h2><p>Contact OrgyNatures to place an order or ask about bulk pricing.</p>
+  <a class="btn" href="https://wa.me/919072945144?text=Hello%20OrgyNatures%2C%20I%27m%20interested%20in%20OrgySaffrons." target="_blank" rel="noopener">Order on WhatsApp</a>
+ </div>
+</section>
+</main>
+<footer><div class="wrap foot"><div><b>ORGYNATURES</b><div style="margin-top:5px">OrgySaffrons · A little luxury from nature</div></div><div>© <span id="year"></span> OrgyNatures. All rights reserved.</div></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+// Product and bulk order links open WhatsApp with a pre-filled enquiry.
+</script>
+</body></html>
